@@ -1,30 +1,37 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './../Navbar/Navbar';
 
 import Home from './../Home/Home';
 import Install from './../Install/Install';
 import Icons from './../Icons/Icons';
+import IconDetails from '../IconDetails/IconDetails';
 
-import './App.scss';
+import styles from './App.scss';
 
 const App = () => {
+
   return (
-    <div className="App">
-      <Navbar />
+    <div className={styles.App}>
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/install">
-            <Install />
-          </Route>
-          <Route exact path="/icons">
-            <Icons />
-          </Route>
-        </Switch>
+        <Navbar />
+        <div className="App-content">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/install">
+              <Install />
+            </Route>
+            <Route exact path="/icons">
+              <Icons />
+            </Route>
+            <Route path="/icon/:id">
+              <IconDetails />
+            </Route>
+          </Switch>
+        </div>
       </Router>
     </div>
   );

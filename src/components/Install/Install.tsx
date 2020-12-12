@@ -1,11 +1,17 @@
 import React from 'react';
 
-import './Install.scss';
+import styles from './Install.scss';
 
 const Install = () => {
 
-  return <div className="Install">
-
+  return <div className={styles.Install}>
+    Install
+    <ul>
+      <li>via NPM</li>
+      <li>direct download</li>
+      <li>SVG download</li>
+      <li>Font download</li>
+    </ul>
   </div>;
 };
 

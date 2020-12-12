@@ -5,7 +5,8 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   mode: 'development',
   resolve: {
@@ -37,7 +38,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
@@ -47,6 +48,10 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
       }
     ]
   },
@@ -58,7 +63,6 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-    port: 8888
+    historyApiFallback: true,
   }
 };

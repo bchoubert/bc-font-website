@@ -1,7 +1,7 @@
 .Icon {
   position: relative;
 
-  &-container {
+  &_container {
     height: 8rem;
     width: 8rem;
     display: flex;
@@ -16,12 +16,12 @@
       background-color: rgba(255, 255, 255, .5);
       z-index: 4;
 
-      i.icon {
+      :global(i.icon) {
         transform: scale(1.9);
       }
     }
 
-    i.icon {
+    :global(i.icon) {
       font-size: 200%;
       width: 1em;
       transition: transform .5s, color .5s;

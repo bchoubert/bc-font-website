@@ -11,7 +11,7 @@ const Icon = ({ icon }: IconProps) => {
   const [isHover, setHover] = useState(false);
 
   return <div className={styles.Icon} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-    <span className="Icon-container">
+    <span className={styles.Icon_container}>
       <i className={`icon ${icon.icon}`} style={{ color: isHover ? icon.color : 'var(--gray-800)' }} />
     </span>
   </div>;

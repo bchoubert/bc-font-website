@@ -11,7 +11,7 @@ const IconFilter = () => {
   console.log(ECategory)
 
   const [searchValue, setSearchValue] = useState<string>('');
-  const[category, setCategory] = useState<ECategory>('ALL');
+  const [category, setCategory] = useState<ECategory>('ALL');
 
   return <div className={styles.IconFilter}>
     <FontAwesomeIcon icon={faSearch} />

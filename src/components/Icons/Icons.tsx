@@ -10,9 +10,11 @@ import 'bc-font/dist/bc-font.css';
 import styles from './Icons.scss';
 
 const Icons = () => {
+  console.log(EIcons);
+
   return <div className={styles.Icons}>
     <IconFilter />
-    <div className="Icons-list">
+    <div className={styles.Icons_list}>
       {Object.entries(EIcons).map(([iconKey, icon]) => <Icon key={iconKey} icon={icon as IconType} />)}
     </div>
   </div>;

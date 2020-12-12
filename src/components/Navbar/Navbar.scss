@@ -15,13 +15,15 @@
     text-decoration: none;
     color: var(--white);
 
-    &.Navbar-logo {
+    .Navbar-logo {
       height: 5em;
       width: 5em;
-      fill: var(--white);
 
       svg {
-        margin: 0;
+
+        height: 5em;
+        width: 5em;
+        fill: var(--white);
       }
     }
 

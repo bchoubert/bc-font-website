@@ -16,7 +16,7 @@ const App = () => {
     <div className={styles.App}>
       <Router>
         <Navbar />
-        <div className="App-content">
+        <div className={styles.App_content}>
           <Switch>
             <Route exact path="/">
               <Home />

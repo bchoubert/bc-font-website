@@ -23,8 +23,13 @@
 
     :global(i.icon) {
       font-size: 200%;
-      width: 1em;
+      width: 2rem;
+      height: 2rem;
       transition: transform .5s, color .5s;
+
+      &:before {
+        height: 2rem;
+      }
     }
   }
 }

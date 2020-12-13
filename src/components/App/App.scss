@@ -3,11 +3,5 @@
   overflow-y: hidden;
   height: 100%;
   display: block;
-
-  &_content {
-    height: calc(100% - 3.5rem);
-    display: block;
-    overflow-y: auto;
-    background: radial-gradient(circle at 15% 150%, var(--theme-transparent) 0%, var(--theme-transparent) 45%,  rgba(200, 200, 200,.3) 80%);
-  }
+  background: radial-gradient(circle at 15% 150%, var(--theme-500) 0%, var(--theme-500-4) 45%,  rgba(200, 200, 200,.3) 80%);
 }

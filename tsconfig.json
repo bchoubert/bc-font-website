@@ -9,7 +9,7 @@
         "experimentalDecorators": true,
         "target": "es6",
         "allowJs": true,
-        "jsx": "preserve",
+        "jsx": "react",
         "outDir": "./dist",
         "baseUrl": "./src",
         "skipLibCheck": true,
@@ -18,8 +18,7 @@
         "isolatedModules": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
-        "moduleResolution": "node",
-        "noEmit": true
+        "moduleResolution": "node"
     },
     "include": ["./src/**/*.js", "./src/**/*.ts", "./src/**/*.tsx"],
     "exclude": ["node_modules"]

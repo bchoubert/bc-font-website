@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import IconType from '../../types/IconType';
+import IconType from '../../../types/IconType';
 
 import styles from './Icon.scss';
 

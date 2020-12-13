@@ -1,4 +1,8 @@
 .Card {
-
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: var(--shadow);
+  border-radius: 1rem;
+  background-color: var(--glass);
+  background-clip: padding-box;
 }

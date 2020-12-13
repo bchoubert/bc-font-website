@@ -20,21 +20,25 @@
   width: 5rem;
   height: 5rem;
   display: block;
-  color: white;
-  fill: white;
+  color: var(--white-500);
+  fill: var(--white-500);
 }
 
-code {
+:global(code) {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 :root {
-  --theme-transparent: rgba(235, 40, 52, .4);
-  --theme: #EB2834;
+  --theme-500-4: rgba(235, 40, 52, .5);
+  --theme-500-2: rgba(235, 40, 52, .2);
+  --theme-500: #EB2834;
+
   --gray-800: #333333;
   --gray-100: #EEEEEE;
-  --white: #FFFFFF;
+
+  --white-500: #FFFFFF;
   --glass: rgba(255, 255, 255, .3);
+
   --shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
 }

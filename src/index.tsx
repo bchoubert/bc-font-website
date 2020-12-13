@@ -6,8 +6,8 @@ import App from './components/App/App';
 import './index.scss';
 
 ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  document.getElementById('root')
+    <StrictMode>
+        <App />
+    </StrictMode>,
+    document.getElementById('root'),
 );

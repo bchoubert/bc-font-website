@@ -1,15 +1,14 @@
+import { EIconType, ECategory, EIconQuality } from 'bc-font/resources/icons';
 
-import EIconType from './enums/EIconType';
-import EIconCategory from './enums/EIconCategory';
-import EIconQuality from './enums/EIconQuality';
+interface IconType {
+    icon: string;
+    type: typeof EIconType;
+    name: string;
+    website?: string;
+    new: boolean;
+    color?: string;
+    categories: typeof ECategory[];
+    quality: typeof EIconQuality;
+}
 
-export default interface IconType {
-  icon: string;
-  type: typeof EIconType;
-  name: string;
-  website?: string;
-  new: boolean;
-  color?: string;
-  categories: (typeof EIconCategory)[];
-  quality: typeof EIconQuality;
-};
+export default IconType;

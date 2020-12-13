@@ -1,5 +1,7 @@
 .Icon {
   position: relative;
+  color: var(--gray-800);
+  text-decoration: none;
 
   &_container {
     height: 8rem;
@@ -19,6 +21,10 @@
       :global(i.icon) {
         transform: scale(1.9);
       }
+
+      & > :global(.Icon_label) {
+        opacity: 1;
+      }
     }
 
     :global(i.icon) {
@@ -30,6 +36,16 @@
       &:before {
         height: 2rem;
       }
+    }
+
+    :global(.Icon_label) {
+      position: absolute;
+      bottom: 0;
+      font-size: 78%;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transition: opacity .5s;
     }
   }
 }

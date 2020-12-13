@@ -1,13 +1,12 @@
 import React, { ReactElement } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import Navbar from './../Navbar/Navbar';
-
-import Home from './../Home/Home';
-import Install from './../Install/Install';
-import Icons from './../Icons/Icons';
 import IconDetails from '../IconDetails/IconDetails';
 
+import Home from './../Home/Home';
+import Icons from './../Icons/Icons';
+import Install from './../Install/Install';
+import Navbar from './../Navbar/Navbar';
 import styles from './App.scss';
 
 const App = (): ReactElement => (

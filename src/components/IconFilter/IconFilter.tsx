@@ -1,6 +1,6 @@
-import React, { ReactElement, useState } from 'react';
 import { ECategory } from 'bc-font/resources/icons';
 import clsx from 'clsx';
+import React, { ReactElement, useState } from 'react';
 
 import styles from './IconFilter.scss';
 

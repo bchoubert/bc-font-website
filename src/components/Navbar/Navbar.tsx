@@ -1,10 +1,9 @@
-import React, { ReactElement } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faIcons } from '@fortawesome/free-solid-svg-icons';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BcFontFullIcon from 'bc-font/icons/bcfont-full.svg';
+import React, { ReactElement } from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Navbar.scss';
 

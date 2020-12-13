@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react';
 import { faHands, faShapes, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { ReactElement } from 'react';
 
 import Card from '../Card/Card';
 

@@ -1,4 +1,4 @@
-import { EIconType, ECategory, EIconQuality } from 'bc-font/resources/icons';
+import { ECategory, EIconQuality, EIconType } from 'bc-font/resources/icons';
 
 interface IconType {
     icon: string;

@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
 import { EIcons } from 'bc-font/resources/icons';
+import React, { ReactElement } from 'react';
 
-import Icon from '../Icon/Icon';
 import IconType from '../../types/IconType';
+import Icon from '../Icon/Icon';
 import IconFilter from '../IconFilter/IconFilter';
 
 import 'bc-font/dist/bc-font.css';

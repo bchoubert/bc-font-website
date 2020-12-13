@@ -1,16 +1,39 @@
 .Home {
-  margin: 5rem;
-  width: calc(100% - 10rem);
-  position: relative;
-  display: flex;
+  overflow-y: auto;
+  height: calc(100% - 3.5rem);
+
+  &_content {
+    margin: 5rem;
+    width: calc(100% - 10rem);
+    position: relative;
+    display: flex;
+
+    &_side {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+
+      & :global(svg:not(:root):not(.svg-inline--fa)) {
+        width: 15rem;
+        height: 15rem;
+        fill: var(--gray-800);
+      }
+    }
+  }
 
   &_card {
-    margin: 1rem;
+    margin: 3rem;
+    padding: 3rem;
     width: calc(100% - 2rem);
     font-size: 85%;
 
     &_list {
       flex: 1;
+
+      &_container {
+        display: flex;
+        flex: 1;
+      }
 
       &:nth-child(2) {
         margin-top: 5rem;

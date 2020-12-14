@@ -1,6 +1,5 @@
 import { faDownload, faHands, faRocket, faShapes, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import BcFontFullIcon from 'bc-font/icons/bcfont-full.svg';
 import { EIcons, ECategory, EIconType } from 'bc-font/resources/icons';
 import React, { ReactElement } from 'react';
 
@@ -11,9 +10,6 @@ import styles from './Home.scss';
 const Home = (): ReactElement => (
     <div className={styles.Home}>
         <div className={styles.Home_content}>
-            <Card className={styles.Home_content_side}>
-                <BcFontFullIcon />
-            </Card>
             <div className={styles.Home_card_list_container}>
                 <div className={styles.Home_card_list}>
                     <Card className={styles.Home_card}>
@@ -29,7 +25,8 @@ const Home = (): ReactElement => (
                         </span>
                         <h1 className={styles.Home_card_title}>Marvelous Choice</h1>
                         <span>
-                            {Object.keys(EIcons).length} icons classified into {Object.keys(ECategory).length} categories.
+                            {Object.keys(EIcons).length} icons classified into {Object.keys(ECategory).length}{' '}
+                            categories.
                             {` ${Object.keys(EIconType).length}`} icon types.
                         </span>
                     </Card>

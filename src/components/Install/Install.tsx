@@ -15,9 +15,6 @@ import styles from './Install.scss';
 const Install = (): ReactElement => (
     <div className={styles.Install}>
         <div className={styles.Install_content}>
-            <Card className={styles.Install_content_side}>
-                <h1>Various ways to install and begin to use!</h1>
-            </Card>
             <div className={styles.Install_card_list_container}>
                 <div className={styles.Install_card_list}>
                     <Card className={styles.Install_card}>

@@ -6,6 +6,7 @@
   width: 100%;
   font-family: Quicksand, sans-serif;
   color: var(--gray-800);
+  background-color: var(--white-500);
 }
 
 :global(input) {
@@ -30,15 +31,35 @@
 }
 
 :root {
-  --theme-500-4: rgba(235, 40, 52, .5);
-  --theme-500-2: rgba(235, 40, 52, .2);
-  --theme-500: #EB2834;
-
+  --gray-900: #1F212D;
   --gray-800: #333333;
+  --gray-300: #BBBBBB;
   --gray-100: #EEEEEE;
+  --gray-50: #F7F7F7;
 
   --white-500: #FFFFFF;
-  --glass: rgba(255, 255, 255, .3);
+  --glass-3: rgba(255, 255, 255, .3);
+  --glass-6: rgba(255, 255, 255, .6);
 
-  --shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  --shadow: 0 0 2rem 2px rgba(0, 0, 0, .1);
+
+  --br: 3rem;
+
+  --theme: #EB2834;
+  --theme-50: #fcd9db;
+
+  --color-1-500: #85B5FD;
+  --color-1-100: #e0ecfe;
+  --color-2-500: #F88686;
+  --color-2-100: #fde0e0;
+  --color-3-500: #FFD759;
+  --color-3-100: #fff5d5;
+  --color-4-500: #80CD97;
+  --color-4-100: #dff2e4;
+  --color-5-500: #FF8ECA;
+  --color-5-100: #ffe2f1;
+  --color-6-500: #D9AEFF;
+  --color-6-100: #f5eaff;
+  --color-7-500: #7BD6F1;
+  --color-7-100: #ddf4fb;
 }

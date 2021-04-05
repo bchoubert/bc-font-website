@@ -1,0 +1,28 @@
+.Radio {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+  &_item {
+    cursor: pointer;
+    margin: .5rem;
+    padding: .5rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+    color: var(--gray-800);
+    background-color: var(--gray-50);
+    transition: color .25s, background-color .25s;
+
+    svg {
+      margin-right: .25rem;
+    }
+
+    &__selected {
+      background-color: var(--theme);
+      color: var(--white-500);
+    }
+  }
+}

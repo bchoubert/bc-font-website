@@ -1,0 +1,87 @@
+.Selector {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+
+  &_field {
+    min-width: 0; 
+    height: 100%; 
+    display: flex;
+    padding-left: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &_caret {
+    flex: 0 0 2rem;
+    width: 2rem;
+    align-self: center;
+  }
+
+  &_drop {
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 0;
+    position: absolute;
+    top: calc(100% - .5rem);
+    left: 0;
+    z-index: 99;
+    background-color: var(--white-500);
+    border-radius: 1rem;
+    box-shadow: 0;
+    transition: box-shadow .5s, max-height .5s;
+
+    &__open {
+      max-height: 25rem;
+      box-shadow: var(--shadow);
+    }
+  }
+
+  &_item {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &_checkbox {
+      font-size: 125%;
+      color: var(--theme);
+
+      &_container {
+        height: 3rem;
+        flex: 0 0 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &_actions {
+    display: flex;
+    height: 3rem;
+    flex-direction: row;
+  }
+
+  &_action {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    background-color: var(--gray-50);
+    border-radius: .25rem;
+    cursor: pointer;
+  }
+}

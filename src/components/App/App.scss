@@ -1,7 +1,8 @@
 .App {
   text-align: center;
-  overflow-y: hidden;
-  height: 100%;
   display: block;
-  background: radial-gradient(circle at 15% 150%, var(--theme-500) 0%, var(--theme-500-4) 45%,  rgba(200, 200, 200,.3) 80%);
+
+  & > *:first-child() {
+    min-height: 100vh;
+  }
 }

@@ -1,0 +1,46 @@
+.Input {
+  height: 100%;
+  width: 100%;
+
+  &_container {
+    flex: 1;
+    position: relative;
+  }
+
+  &_label {
+    position: absolute;
+    height: 100%;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .25s;
+    top: 0;
+    color: var(--gray-300);
+
+    &__show {
+      opacity: 1;
+    }
+
+    svg {
+      margin-right: .5rem;
+    }
+  }
+
+  &_clear {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: var(--gray-300);
+  }
+
+  &:focus {
+    & + .Input_label {
+      opacity: 0;
+    }
+  }
+}

@@ -3,22 +3,21 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import IconDetails from '../IconDetails/IconDetails';
 
+import Disclaimer from './../Disclaimer/Disclaimer';
+import Footer from './../Footer/Footer';
 import Home from './../Home/Home';
 import Icons from './../Icons/Icons';
-import Install from './../Install/Install';
-import Navbar from './../Navbar/Navbar';
 import styles from './App.scss';
 
 const App = (): ReactElement => (
     <div className={styles.App}>
         <Router>
-            <Navbar />
             <Switch>
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route exact path="/install">
-                    <Install />
+                <Route exact path="/disclaimer">
+                    <Disclaimer />
                 </Route>
                 <Route exact path="/icons">
                     <Icons />
@@ -27,6 +26,7 @@ const App = (): ReactElement => (
                     <IconDetails />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     </div>
 );

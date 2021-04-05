@@ -1,52 +1,73 @@
 .Home {
-  overflow-y: auto;
-  height: calc(100% - 3.5rem);
 
-  &_content {
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
+  &_page {
     display: flex;
-    max-width: 600px;
+    flex-direction: row;
+    height: 100vh;
   }
+  
 
-  &_card {
-    margin: 3rem 0;
-    padding: 3rem;
-    width: 100%;
-    font-size: 85%;
+  &_left {
+    flex: 2;
+    padding: 2rem;
+    background-color: var(--white-500);
+    display: flex;
+    flex-direction: column;
 
-    &_list {
+    &_icons {
       flex: 1;
-
-      &_container {
-        display: flex;
-        flex: 1;
-        column-gap: 2rem;
-      }
-
-      &:nth-child(2) {
-        margin-top: 5rem;
-      }
-    }
-
-    &_icon {
-      margin: .5rem auto;
-      height: 2.5rem;
-      width: 2.5rem;
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      border-radius: 50%;
-      background-color: var(--theme-500-2);
-      color: var(--theme-500);
+      background-color: transparent;
+
+      &_link {
+        flex: 1;
+        background-color: var(--theme-50);
+        color: var(--gray-800);
+        border-radius: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+      }
     }
 
-    &_title {
-      font-size: 120%;
-      font-size: medium;
-      margin: 1rem 0 .5rem;
-      font-weight: bold;
+    &_card {
+      background-color: var(--theme);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: var(--white-500);
+      padding: 5rem 2rem;
+
+      :global(i.icon) {
+        margin: -2.3rem 0;
+        font-size: 1000%;
+      }
+
+      h1 {
+        text-align: left;
+        font-size: 1.3rem;
+        margin: .5em 0;
+      }
+
+      h4 {
+        text-align: left;
+        font-size: 1rem;
+        font-weight: normal;
+        margin: .5em 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+
+    &_page {
+      flex-direction: column;
+      height: auto;
     }
   }
 }

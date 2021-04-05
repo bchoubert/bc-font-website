@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './Footer.scss';
@@ -23,4 +23,4 @@ const Footer: FC = () => (
     </div>
 );
 
-export default Footer;
+export default memo(Footer);

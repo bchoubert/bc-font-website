@@ -2,7 +2,7 @@ import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { EIcons } from 'bc-font/resources/icons';
 import { ECategory, EIconType } from 'bc-font/resources/icons';
-import React, { ReactElement, useState, useMemo } from 'react';
+import React, { ReactElement, useState, useMemo, memo } from 'react';
 
 import 'bc-font/dist/bc-font.css';
 
@@ -64,4 +64,4 @@ const Icons = (): ReactElement => {
     );
 };
 
-export default Icons;
+export default memo(Icons);

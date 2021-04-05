@@ -1,7 +1,7 @@
 import { faDownload, faHands, faRocket, faShapes, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { EIcons, ECategory, EIconType } from 'bc-font/resources/icons';
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 
 import Card from '../../Utils/Card/Card';
 
@@ -71,4 +71,4 @@ const Features: FC = () => (
     </div>
 );
 
-export default Features;
+export default memo(Features);

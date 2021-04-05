@@ -7,7 +7,7 @@ import {
     faLink,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { ReactElement } from 'react';
+import React, { memo, ReactElement } from 'react';
 
 import Card from '../../Utils/Card/Card';
 
@@ -171,4 +171,4 @@ const Install = (): ReactElement => (
     </div>
 );
 
-export default Install;
+export default memo(Install);

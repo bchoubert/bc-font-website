@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React, { ReactElement, ReactNode, CSSProperties } from 'react';
+import React, { ReactElement, ReactNode, CSSProperties, memo } from 'react';
 
 import styles from './Card.scss';
 
@@ -16,4 +16,4 @@ const Card = ({ children, className, isInteractive, style }: CardProps): ReactEl
     </div>
 );
 
-export default Card;
+export default memo(Card);

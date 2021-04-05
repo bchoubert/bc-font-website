@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { memo, ReactElement } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import IconDetails from '../IconDetails/IconDetails';
@@ -31,4 +31,4 @@ const App = (): ReactElement => (
     </div>
 );
 
-export default App;
+export default memo(App);

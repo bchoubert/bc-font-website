@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { memo, ReactElement } from 'react';
 import { useParams } from 'react-router-dom';
 
 import styles from './IconDetails.scss';
@@ -9,4 +9,4 @@ const IconDetails = (): ReactElement => {
     return <div className={styles.IconDetails}>ICON DETAILS {iconKey}</div>;
 };
 
-export default IconDetails;
+export default memo(IconDetails);

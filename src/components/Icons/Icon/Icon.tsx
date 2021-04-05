@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { memo, ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 
 import IconType from '../../../types/IconType';
@@ -22,4 +22,4 @@ const Icon = ({ icon, iconKey }: IconProps): ReactElement => {
     );
 };
 
-export default Icon;
+export default memo(Icon);

@@ -1,5 +1,5 @@
 import { EIcons } from 'bc-font/resources/icons';
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 
 import styles from './Disclaimer.scss';
 
@@ -35,4 +35,4 @@ const Disclaimer: FC = () => (
     </div>
 );
 
-export default Disclaimer;
+export default memo(Disclaimer);

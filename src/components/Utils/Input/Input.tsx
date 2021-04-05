@@ -1,7 +1,7 @@
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
-import React, { FC, ReactNode, useCallback, useMemo } from 'react';
+import React, { FC, memo, ReactNode, useCallback, useMemo } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import styles from './Input.scss';
@@ -32,4 +32,4 @@ const Input: FC<InputProps> = ({ value, setValue, label }: InputProps) => {
     );
 };
 
-export default Input;
+export default memo(Input);

@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { memo, ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 
 import Card from '../Utils/Card/Card';
@@ -28,4 +28,4 @@ const Home = (): ReactElement => (
     </div>
 );
 
-export default Home;
+export default memo(Home);

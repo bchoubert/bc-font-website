@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React, { Dispatch, FC, ReactNode, SetStateAction, useCallback } from 'react';
+import React, { Dispatch, FC, memo, ReactNode, SetStateAction, useCallback } from 'react';
 
 import styles from './Radio.scss';
 
@@ -39,4 +39,4 @@ const Radio: FC<RadioProps> = ({ values, possibleValues, setValues, renderValue 
     return <div className={styles.Radio}>{possibleValues.map(renderItem)}</div>;
 };
 
-export default Radio;
+export default memo(Radio);

@@ -42,29 +42,40 @@ const IconFilter: FC<IconFilterProps> = ({
             <Link to="/" className={styles.IconFilter_logo}>
                 <i className="icon icon-bcfont-full" />
             </Link>
-            <Input
-                value={searchValue}
-                setValue={setSearchValue}
-                label={
-                    <span>
-                        <FontAwesomeIcon icon={faSearch} />
-                        Search
-                    </span>
-                }
-            />
-            <Selector
-                possibleValues={Object.keys(ECategory)}
-                values={categories}
-                setValues={setCategories}
-                renderValue={(valueKey) => ECategoryDetails[valueKey].title}
-                renderValues={(valueKeys) => <span>{valueKeys.length} selected categories</span>}
-            />
-            <Radio
-                values={types}
-                setValues={setTypes}
-                possibleValues={Object.keys(EIconType)}
-                renderValue={renderIconType}
-            />
+            <div className={styles.IconFilter_content}>
+                <div className={styles.IconFilter_first}>
+                    <Input
+                        value={searchValue}
+                        setValue={setSearchValue}
+                        label={
+                            <span>
+                                <FontAwesomeIcon icon={faSearch} />
+                                Search
+                            </span>
+                        }
+                    />
+                </div>
+                <div className={styles.IconFilter_second}>
+                    <Selector
+                        possibleValues={Object.keys(ECategory)}
+                        values={categories}
+                        setValues={setCategories}
+                        renderValue={(valueKey) => ECategoryDetails[valueKey].title}
+                        renderValues={(valueKeys) => (
+                            <span>
+                                {valueKeys.length}{' '}
+                                <span className={styles.IconFilter_bigScreen}>selected categories</span>
+                            </span>
+                        )}
+                    />
+                    <Radio
+                        values={types}
+                        setValues={setTypes}
+                        possibleValues={Object.keys(EIconType)}
+                        renderValue={renderIconType}
+                    />
+                </div>
+            </div>
         </div>
     );
 };

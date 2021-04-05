@@ -1,13 +1,10 @@
 .IconFilter {
-  width: calc(100% - 10rem);
   z-index: 5;
   height: 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   box-shadow: var(--shadow);
-  border-radius: 1rem;
-  transition: background-color .5s;
   background-color: var(--white-500);
   position: fixed;
   top: 3rem;
@@ -33,12 +30,46 @@
     }
   }
 
-  input {
-    height: 4rem;
-    background-color: transparent;
-    border: 0;
+  &_content {
     flex: 1;
-    padding-left: 1rem;
-    color: var(--gray-800);
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_first {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_second {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .IconFilter {
+    height: 8rem;
+    margin: 0 .5rem;
+    top: .5rem;
+    width: calc(100% - 1rem);
+
+    &_bigScreen {
+      display: none;
+    }
+
+    &_second,
+    &_first {
+      min-width: 100%;
+      height: 4rem;
+    }
+
+    &_content {
+      height: 8rem;
+      flex-wrap: wrap;
+    }
   }
 }

@@ -27,6 +27,7 @@ const Radio: FC<RadioProps> = ({ values, possibleValues, setValues, renderValue 
     const renderItem = useCallback(
         (valueKey) => (
             <div
+                key={valueKey}
                 className={clsx(styles.Radio_item, values.includes(valueKey) && styles.Radio_item__selected)}
                 onClick={() => onItemClick(valueKey)}
             >

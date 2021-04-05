@@ -19,3 +19,12 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .Icons {
+    &_list {
+      margin: .1rem .5rem .5rem .5rem;
+      width: calc(100% - 1rem);
+    }
+  }
+}

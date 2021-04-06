@@ -1,3 +1,5 @@
+import { faIcons } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { memo, ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +20,8 @@ const Home = (): ReactElement => (
                 </Card>
                 <Link to="/icons" className={styles.Home_left_icons_link}>
                     <Card className={styles.Home_left_icons}>
-                        <h2>aa</h2>
+                        <h2>Check the icons now!</h2>
+                        <FontAwesomeIcon icon={faIcons} />
                     </Card>
                 </Link>
             </div>

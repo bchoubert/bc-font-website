@@ -55,7 +55,7 @@
         "start": "webpack serve",
         "lint": "eslint --ext .js,.ts,.tsx --ignore-pattern dist/ --ignore-pattern webpack.config.js --fix .",
         "predeploy": "yarn build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -76,6 +76,5 @@
         "hooks": {
             "pre-commit": "yarn lint"
         }
-    },
-    "homepage": "https://github.com/bchoubert/bc-font-website"
+    }
 }

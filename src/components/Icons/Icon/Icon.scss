@@ -21,8 +21,9 @@
     font-style: normal;
     border-radius: .5rem;
     z-index: 100;
+    font-weight: bold;
     overflow: hidden;
-    transition: height .2s .1s, width .2s .1s, color .2s .1s;
+    transition: height .2s .1s, width .2s .1s, color .2s .1s, background-color .2s .1s;
   }
 
   &_circle {
@@ -49,7 +50,8 @@
     & .Icon__new {
       height: 1.5rem;
       width: 3rem;
-      color: var(--white-500);
+      color: var(--theme);
+      background-color: var(--white-500);
     }
   }
   

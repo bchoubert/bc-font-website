@@ -12,15 +12,21 @@ interface IconQualityProps {
 const IconQuality: FC<IconQualityProps> = ({ quality }: IconQualityProps) => {
     return (
         <div className={styles.IconQuality}>
-            {Object.keys(EIconQuality).map((qualityKey: EIconQuality) => (
-                <span
-                    className={clsx(styles.IconQuality_item, qualityKey === quality && styles.IconQuality_item__active)}
-                    key={qualityKey}
-                    style={{ backgroundColor: EIconQualityDetails[qualityKey].color }}
-                >
-                    {qualityKey === quality ? EIconQualityDetails[qualityKey].label : null}
-                </span>
-            ))}
+            <div className={styles.IconQuality_list}>
+                {Object.keys(EIconQuality).map((qualityKey: EIconQuality) => (
+                    <span
+                        className={clsx(
+                            styles.IconQuality_list_item,
+                            qualityKey === quality && styles.IconQuality_list_item__active,
+                        )}
+                        key={qualityKey}
+                        style={{ backgroundColor: EIconQualityDetails[qualityKey].color }}
+                    >
+                        {qualityKey === quality ? EIconQualityDetails[qualityKey].label : null}
+                    </span>
+                ))}
+            </div>
+            <span className={styles.IconQuality_label}>Quality</span>
         </div>
     );
 };

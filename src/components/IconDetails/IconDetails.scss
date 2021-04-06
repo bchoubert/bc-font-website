@@ -5,12 +5,16 @@
   padding-top: 3rem;
 
   h1 {
-    margin: 0;
+    margin-bottom: 0;
   }
 
   h4 {
     margin: 0;
     color: var(--gray-300);
+  }
+
+  h5 {
+    margin-bottom: 0;
   }
 
   &_backlink {
@@ -48,6 +52,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    svg {
+      margin-right: .2rem;
+    }
   }
 
   &_related {

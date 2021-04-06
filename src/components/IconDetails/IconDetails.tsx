@@ -5,6 +5,7 @@ import React, { memo, ReactElement, useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import EIconQualityDetails from './../../types/EIconQualityDetails';
+import EIconTypeDetails from './../../types/EIconTypeDetails';
 import Tooltip from './../Utils/Tooltip/Tooltip';
 import IconCards from './IconCards/IconCards';
 import styles from './IconDetails.scss';
@@ -35,6 +36,10 @@ const IconDetails = (): ReactElement => {
                     <h1>{icon.name}</h1>
                     <h4>{iconKey}</h4>
                     <h5>Categories: {categories.join(', ')}</h5>
+                    <h5>
+                        <FontAwesomeIcon icon={EIconTypeDetails[icon.type].icon} style={{ color: icon.color }} />
+                        {EIconTypeDetails[icon.type].label}
+                    </h5>
                     <Tooltip content={EIconQualityDetails[icon.quality].description}>
                         <IconQuality quality={icon.quality} />
                     </Tooltip>

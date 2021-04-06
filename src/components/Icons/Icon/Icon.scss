@@ -86,3 +86,13 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1200px) {
+  .Icon {
+    &_container {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+}

@@ -26,3 +26,11 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .Radio {
+    &_item {
+      margin: .2rem;
+    }
+  }
+}

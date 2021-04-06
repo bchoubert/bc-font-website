@@ -11,7 +11,13 @@ const Tooltip: FC<TooltipProps> = ({ content, children }: TooltipProps) => {
     const [isHover, setHover] = useState<boolean>(false);
 
     return (
-        <div className={styles.Tooltip} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+        <div
+            className={styles.Tooltip}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+            onFocus={() => setHover(true)}
+            onBlur={() => setHover(false)}
+        >
             {children}
             {isHover && <span className={styles.Tooltip_content}>{content}</span>}
         </div>

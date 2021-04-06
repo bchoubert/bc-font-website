@@ -1,0 +1,23 @@
+.Footer {
+  height: 2rem;
+  width: 100%;
+  min-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 1rem;
+
+  a {
+    &, &:hover, &:focus, &:visited, &:link {
+      color: var(--theme);
+      text-decoration: none;
+    }
+  }
+
+  &_links {
+    a {
+      margin: 0 .5rem;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.Home {
+
+  &_page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+
+  &_left {
+    flex: 2;
+    padding: 2rem;
+    background-color: var(--white-500);
+    display: flex;
+    flex-direction: column;
+
+    &_icons {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+
+      &_link {
+        flex: 1;
+        background-color: var(--theme-50);
+        color: var(--gray-800);
+        border-radius: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+      }
+    }
+
+    &_card {
+      background-color: var(--theme);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: var(--white-500);
+      padding: 5rem 2rem;
+
+      :global(i.icon) {
+        margin: -2.3rem 0;
+        font-size: 1000%;
+      }
+
+      h1 {
+        text-align: left;
+        font-size: 1.3rem;
+        margin: .5em 0;
+      }
+
+      h4 {
+        text-align: left;
+        font-size: 1rem;
+        font-weight: normal;
+        margin: .5em 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+
+    &_page {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+}

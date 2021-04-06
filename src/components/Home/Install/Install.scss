@@ -1,0 +1,67 @@
+.Install {
+
+  &_content {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    max-width: 850px;
+  }
+
+  a[href] {
+    display: grid;
+    border: 0;
+    height: 2rem;
+    place-items: center;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin: 1rem auto 0 auto;
+    cursor: pointer;
+    font-weight: bold;
+
+    &, &:hover, &:focus, &:link, &:visited {
+      color: var(--gray-800);
+      text-decoration: none;
+    }
+  }
+
+  &_card {
+    margin: 3rem 0;
+    padding: 3rem;
+    width: 100%;
+    font-size: 85%;
+
+    &_list {
+      flex: 1;
+
+      &_container {
+        display: flex;
+        flex: 1;
+        column-gap: 2rem;
+      }
+
+      &:nth-child(2) {
+        margin-top: 5rem;
+      }
+    }
+
+    &_icon {
+      margin: .5rem auto;
+      height: 2.5rem;
+      width: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: var(--theme-500-2);
+      color: var(--theme-500);
+    }
+
+    &_title {
+      font-size: 120%;
+      font-size: medium;
+      margin: 1rem 0 .5rem;
+      font-weight: bold;
+    }
+  }
+}

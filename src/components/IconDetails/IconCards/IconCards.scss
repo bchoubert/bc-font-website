@@ -1,0 +1,52 @@
+.IconCards {
+  flex: 1;
+  background-color: var(--gray-50);
+  border-radius: 1rem;
+
+  &_top {
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem;
+    color: var(--white-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1000%;
+    position: relative;
+
+    &__new {
+      position: absolute;
+      top: .3rem;
+      right: .3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--theme);
+      font-style: normal;
+      border-radius: .5rem;
+      z-index: 100;
+      height: 1.5rem;
+      width: 3rem;
+      font-size: 1rem;
+      background-color: var(--white-500);
+    }
+  }
+
+  &_bottom {
+    display: flex;
+    flex-direction: row;
+    height: 8rem;
+    margin-top: 3rem;
+
+    &_left {
+      flex: 1;
+      font-size: 600%;
+    }
+
+    &_right {
+      flex: 1;
+      color: var(--gray-800);
+      font-size: 600%;
+    }
+  }
+}

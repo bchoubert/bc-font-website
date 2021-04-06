@@ -1,0 +1,17 @@
+.Disclaimer {
+  p {
+    max-width: 1000px;
+    padding: 1rem 5rem;
+    margin: 0 auto;
+    white-space: pre-wrap;
+
+    a {
+      display: inline-block;
+      margin: 0 .5rem;
+
+      &, &:hover, &:focus, &:visited, &:link {
+        text-decoration: none;
+      }
+    }
+  }
+}

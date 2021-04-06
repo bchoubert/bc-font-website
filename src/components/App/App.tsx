@@ -1,33 +1,34 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { memo, ReactElement } from 'react';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import Navbar from './../Navbar/Navbar';
+import IconDetails from '../IconDetails/IconDetails';
 
+import Disclaimer from './../Disclaimer/Disclaimer';
+import Footer from './../Footer/Footer';
 import Home from './../Home/Home';
-import Install from './../Install/Install';
 import Icons from './../Icons/Icons';
+import styles from './App.scss';
 
-import './App.scss';
-
-const App = () => {
-  return (
-    <div className="App">
-      <Navbar />
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/install">
-            <Install />
-          </Route>
-          <Route exact path="/icons">
-            <Icons />
-          </Route>
-        </Switch>
-      </Router>
+const App = (): ReactElement => (
+    <div className={styles.App}>
+        <Router>
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/disclaimer">
+                    <Disclaimer />
+                </Route>
+                <Route exact path="/icons">
+                    <Icons />
+                </Route>
+                <Route path="/icon/:id">
+                    <IconDetails />
+                </Route>
+            </Switch>
+            <Footer />
+        </Router>
     </div>
-  );
-};
+);
 
-export default App;
+export default memo(App);

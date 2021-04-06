@@ -1,0 +1,88 @@
+.Icon {
+  position: relative;
+  color: var(--gray-800);
+  text-decoration: none;
+  background-color: var(--white-500);
+  margin: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  &__new {
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme);
+    color: rgba(255, 255, 255, 0);
+    font-style: normal;
+    border-radius: .5rem;
+    z-index: 100;
+    font-weight: bold;
+    overflow: hidden;
+    transition: height .2s .1s, width .2s .1s, color .2s .1s, background-color .2s .1s;
+  }
+
+  &_circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 200%;
+    height: 200%;
+    top: 75%;
+    left: -50%;
+    display: block;
+    transition: top .5s .1s;
+    z-index: -1;
+  }
+
+  &:hover {
+    :global(i.icon) {
+      color: var(--white-500) !important;
+    }
+    
+    & .Icon_circle {
+      top: -50%;
+    }
+
+    & .Icon__new {
+      height: 1.5rem;
+      width: 3rem;
+      color: var(--theme);
+      background-color: var(--white-500);
+    }
+  }
+  
+  &_container {
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 1rem;
+
+    :global(i.icon) {
+      font-size: 250%;
+      width: 2.5rem;
+      height: 2.5rem;
+      transition: color .5s .1s;
+
+      &:before {
+        height: 2rem;
+      }
+    }
+
+    :global(.Icon_label) {
+      color: var(--white-500);
+      position: absolute;
+      bottom: .2rem;
+      font-size: 78%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.Icons {
+  padding-top: 7rem;
+  box-sizing: border-box;
+  background-color: var(--gray-100);
+  
+  &_list {
+    margin: .1rem 5rem 5rem 5rem;
+    width: calc(100% - 10rem);
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+
+  &_none {
+    margin: 2rem 0;
+
+    svg {
+      margin-left: .5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Icons {
+    &_list {
+      margin: .1rem .5rem .5rem .5rem;
+      width: calc(100% - 1rem);
+    }
+  }
+}

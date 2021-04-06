@@ -1,0 +1,13 @@
+.Card {
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: var(--white-500);
+  background-clip: padding-box;
+  transition: transform .5s, background-color .5s;
+
+  &_interactive:hover {
+    background-color: var(--white-500);
+    transform: scale(1.1);
+  }
+}

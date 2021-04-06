@@ -13,6 +13,7 @@ interface IconProps {
 const Icon = ({ icon, iconKey }: IconProps): ReactElement => {
     return (
         <Link to={`/icon/${iconKey}`} className={styles.Icon}>
+            {icon.new ? <i className={styles.Icon__new}>NEW</i> : null}
             <span className={styles.Icon_container}>
                 <i className={`icon ${icon.icon}`} style={{ color: icon.color || 'var(--gray-900)' }} />
                 <span className="Icon_label">{icon.name}</span>

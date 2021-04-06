@@ -1,0 +1,14 @@
+.Tooltip {
+  position: relative;
+
+  &_content {
+    position: absolute;
+    bottom: 100%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, .9);
+    color: var(--white-500);
+    border-radius: .5rem;
+    padding: .5rem;
+    min-width: 25rem;
+  }
+}

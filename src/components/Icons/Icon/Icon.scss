@@ -7,6 +7,24 @@
   border-radius: 1rem;
   overflow: hidden;
 
+  &__new {
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme);
+    color: rgba(255, 255, 255, 0);
+    font-style: normal;
+    border-radius: .5rem;
+    z-index: 100;
+    overflow: hidden;
+    transition: height .2s .1s, width .2s .1s, color .2s .1s;
+  }
+
   &_circle {
     position: absolute;
     border-radius: 50%;
@@ -26,6 +44,12 @@
     
     & .Icon_circle {
       top: -50%;
+    }
+
+    & .Icon__new {
+      height: 1.5rem;
+      width: 3rem;
+      color: var(--white-500);
     }
   }
   

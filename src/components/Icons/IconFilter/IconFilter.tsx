@@ -4,7 +4,7 @@ import { ECategory, ECategoryDetails, EIconType } from 'bc-font/resources/icons'
 import React, { ReactElement, memo, useCallback, FC, Dispatch, SetStateAction } from 'react';
 import { Link } from 'react-router-dom';
 
-import { EIconTypeDetails } from './../../../types/IconType';
+import EIconTypeDetails from './../../../types/EIconTypeDetails';
 import Input from './../../Utils/Input/Input';
 import Radio from './../../Utils/Radio/Radio';
 import Selector from './../../Utils/Selector/Selector';

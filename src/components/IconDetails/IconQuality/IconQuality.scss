@@ -1,0 +1,30 @@
+.IconQuality {
+  border: 1px solid var(--gray-800);
+  height: 1rem;
+  border-radius: .6rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto;
+
+  &_item {
+    height: .4rem;
+    margin: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-500);
+    width: .4rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    font-size: 70%;
+    font-weight: bold;
+
+    &__active {
+      width: 3rem;
+      height: .8rem;
+      margin: 0;
+    }
+  }
+}

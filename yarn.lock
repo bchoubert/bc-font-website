@@ -4277,10 +4277,10 @@ batch@0.6.1:
   resolved "https://registry.yarnpkg.com/batch/-/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=
 
-bc-font@^2.1.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/bc-font/-/bc-font-2.3.1.tgz#d3560f3199dc9e4ae33e3b9689bb647a81c8ba19"
-  integrity sha512-qnE5sub9NPZYf99P+DtXQoSPVNOtZYWqpUzsvFJmdx9coS+ii8XNuQLpQTnWmiQxjsdv4oTC/URVWIzS7/ljKg==
+bc-font@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/bc-font/-/bc-font-2.3.2.tgz#46f3c2bbfb76814c477b30c302d13da24354c55d"
+  integrity sha512-bImnsjvt1yfptVIQ7eu1BoURZ+pLRv8y4uevjj/DO5AxPoBFLEU+XXrPL7KmiqKhu/ZoHUhskXPPvzdkaBwsuw==
 
 bcrypt-pbkdf@^1.0.0:
   version "1.0.2"

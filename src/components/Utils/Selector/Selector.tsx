@@ -40,7 +40,7 @@ const Selector: FC<SelectorProps> = ({
     const deselectAllHandler = useCallback(() => setValues([]), [setValues]);
 
     const renderPossibleValue = useCallback(
-        (possibleValueKey) => (
+        (possibleValueKey: string) => (
             <div className={styles.Selector_item} onClick={() => onItemClick(possibleValueKey)} key={possibleValueKey}>
                 <div className={styles.Selector_item_checkbox_container}>
                     <FontAwesomeIcon

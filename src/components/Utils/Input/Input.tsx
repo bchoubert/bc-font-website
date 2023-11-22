@@ -1,7 +1,7 @@
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
-import React, { FC, memo, ReactNode, useCallback, useMemo } from 'react';
+import React, { ChangeEvent, FC, memo, ReactNode, useCallback, useMemo } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import styles from './Input.scss';
@@ -13,7 +13,7 @@ interface InputProps {
 }
 
 const Input: FC<InputProps> = ({ value, setValue, label }: InputProps) => {
-    const onInputChange = useCallback((e) => setValue(e.target.value), [setValue]);
+    const onInputChange = useCallback((e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value), [setValue]);
     const clearHandler = useCallback(() => setValue(''), [setValue]);
 
     const inputId = useMemo(() => uuidv4(), []);

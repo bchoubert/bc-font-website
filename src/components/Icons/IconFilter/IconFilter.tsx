@@ -57,7 +57,7 @@ const IconFilter: FC<IconFilterProps> = ({
                 </div>
                 <div className={styles.IconFilter_second}>
                     <Selector
-                        possibleValues={Object.keys(ECategory)}
+                        possibleValues={Object.keys(ECategory).sort()}
                         values={categories}
                         setValues={setCategories}
                         renderValue={(valueKey) => ECategoryDetails[valueKey].title}

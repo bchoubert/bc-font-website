@@ -39,15 +39,8 @@ module.exports = {
             },
             {
                 test: /(\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?)|bc-font.svg$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'fonts/',
-                        },
-                    },
-                ],
+                type: 'asset/resource',
+                dependency: { not: ['url'] },
             },
             {
                 test: /\.svg$/,

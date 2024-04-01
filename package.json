@@ -10,7 +10,7 @@
         "@testing-library/jest-dom": "latest",
         "@testing-library/react": "latest",
         "@testing-library/user-event": "latest",
-        "bc-font": "^2.4.0",
+        "bc-font": "^2.5.1",
         "clsx": "latest",
         "node-sass": "latest",
         "react": "latest",
@@ -49,7 +49,7 @@
         "ts-loader": "latest",
         "webpack": "^5.89.0",
         "webpack-cli": "^5.1.4",
-        "webpack-dev-server": "^4.15.1"
+        "webpack-dev-server": "^5.0.4"
     },
     "scripts": {
         "build": "webpack",

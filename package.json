@@ -10,7 +10,7 @@
         "@testing-library/jest-dom": "latest",
         "@testing-library/react": "latest",
         "@testing-library/user-event": "latest",
-        "bc-font": "^2.6.0",
+        "bc-font": "^2.7.0",
         "clsx": "latest",
         "node-sass": "latest",
         "react": "latest",
